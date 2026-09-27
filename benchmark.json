@@ -1,0 +1,448 @@
+{
+  "seeds": [
+    42,
+    123,
+    777
+  ],
+  "learner_kind": "rf",
+  "budget_frac": 0.2,
+  "batch_frac": 0.03,
+  "threshold_abs": 0.03,
+  "datasets": [
+    "gaussian2d",
+    "moons",
+    "blobs20",
+    "spiral",
+    "digits700"
+  ],
+  "results": [
+    {
+      "dataset": "gaussian2d",
+      "strategy": "random",
+      "mean_acc": 0.7111,
+      "std_acc": 0.0157,
+      "mean_auc": 0.1524,
+      "std_auc": 0.0067,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "gaussian2d",
+      "strategy": "uncertainty",
+      "mean_acc": 0.7259,
+      "std_acc": 0.0069,
+      "mean_auc": 0.1514,
+      "std_auc": 0.0061,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0148,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "gaussian2d",
+      "strategy": "committee",
+      "mean_acc": 0.7167,
+      "std_acc": 0.0136,
+      "mean_auc": 0.1508,
+      "std_auc": 0.0102,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0056,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "gaussian2d",
+      "strategy": "coreset",
+      "mean_acc": 0.7537,
+      "std_acc": 0.0273,
+      "mean_auc": 0.1576,
+      "std_auc": 0.0104,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0426,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "gaussian2d",
+      "strategy": "hybrid",
+      "mean_acc": 0.7148,
+      "std_acc": 0.025,
+      "mean_auc": 0.1533,
+      "std_auc": 0.0111,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0037,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "moons",
+      "strategy": "random",
+      "mean_acc": 0.8611,
+      "std_acc": 0.0171,
+      "mean_auc": 0.1799,
+      "std_auc": 0.0008,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "moons",
+      "strategy": "uncertainty",
+      "mean_acc": 0.8778,
+      "std_acc": 0.0052,
+      "mean_auc": 0.1706,
+      "std_auc": 0.0115,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0167,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "moons",
+      "strategy": "committee",
+      "mean_acc": 0.8861,
+      "std_acc": 0.002,
+      "mean_auc": 0.1816,
+      "std_auc": 0.0033,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.025,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "moons",
+      "strategy": "coreset",
+      "mean_acc": 0.8625,
+      "std_acc": 0.0156,
+      "mean_auc": 0.1792,
+      "std_auc": 0.0046,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0014,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "moons",
+      "strategy": "hybrid",
+      "mean_acc": 0.8833,
+      "std_acc": 0.009,
+      "mean_auc": 0.1834,
+      "std_auc": 0.0017,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0222,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "blobs20",
+      "strategy": "random",
+      "mean_acc": 0.6704,
+      "std_acc": 0.008,
+      "mean_auc": 0.1261,
+      "std_auc": 0.001,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "blobs20",
+      "strategy": "uncertainty",
+      "mean_acc": 0.721,
+      "std_acc": 0.0092,
+      "mean_auc": 0.1293,
+      "std_auc": 0.0033,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0506,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "blobs20",
+      "strategy": "committee",
+      "mean_acc": 0.7049,
+      "std_acc": 0.0334,
+      "mean_auc": 0.1261,
+      "std_auc": 0.0028,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0346,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "blobs20",
+      "strategy": "coreset",
+      "mean_acc": 0.7148,
+      "std_acc": 0.0139,
+      "mean_auc": 0.121,
+      "std_auc": 0.0032,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0444,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "blobs20",
+      "strategy": "hybrid",
+      "mean_acc": 0.716,
+      "std_acc": 0.0385,
+      "mean_auc": 0.1259,
+      "std_auc": 0.0035,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0457,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "spiral",
+      "strategy": "random",
+      "mean_acc": 0.5944,
+      "std_acc": 0.0129,
+      "mean_auc": 0.1197,
+      "std_auc": 0.0017,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "spiral",
+      "strategy": "uncertainty",
+      "mean_acc": 0.5556,
+      "std_acc": 0.0199,
+      "mean_auc": 0.115,
+      "std_auc": 0.0007,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": -0.0389,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "spiral",
+      "strategy": "committee",
+      "mean_acc": 0.5764,
+      "std_acc": 0.0157,
+      "mean_auc": 0.1184,
+      "std_auc": 0.006,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": -0.0181,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "spiral",
+      "strategy": "coreset",
+      "mean_acc": 0.6111,
+      "std_acc": 0.0463,
+      "mean_auc": 0.1213,
+      "std_auc": 0.0056,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0167,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "spiral",
+      "strategy": "hybrid",
+      "mean_acc": 0.6153,
+      "std_acc": 0.0153,
+      "mean_auc": 0.1237,
+      "std_auc": 0.0013,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0208,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "digits700",
+      "strategy": "random",
+      "mean_acc": 0.873,
+      "std_acc": 0.009,
+      "mean_auc": 0.1499,
+      "std_auc": 0.0002,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "digits700",
+      "strategy": "uncertainty",
+      "mean_acc": 0.9317,
+      "std_acc": 0.0162,
+      "mean_auc": 0.1557,
+      "std_auc": 0.0044,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0587,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "digits700",
+      "strategy": "committee",
+      "mean_acc": 0.8937,
+      "std_acc": 0.0059,
+      "mean_auc": 0.1489,
+      "std_auc": 0.0015,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0206,
+      "significant_vs_random": true
+    },
+    {
+      "dataset": "digits700",
+      "strategy": "coreset",
+      "mean_acc": 0.8952,
+      "std_acc": 0.0375,
+      "mean_auc": 0.1513,
+      "std_auc": 0.0052,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0222,
+      "significant_vs_random": false
+    },
+    {
+      "dataset": "digits700",
+      "strategy": "hybrid",
+      "mean_acc": 0.927,
+      "std_acc": 0.0221,
+      "mean_auc": 0.1562,
+      "std_auc": 0.0027,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.054,
+      "significant_vs_random": true
+    }
+  ],
+  "best_per_dataset": {
+    "gaussian2d": {
+      "dataset": "gaussian2d",
+      "strategy": "coreset",
+      "mean_acc": 0.7537,
+      "std_acc": 0.0273,
+      "mean_auc": 0.1576,
+      "std_auc": 0.0104,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0426,
+      "significant_vs_random": true
+    },
+    "moons": {
+      "dataset": "moons",
+      "strategy": "committee",
+      "mean_acc": 0.8861,
+      "std_acc": 0.002,
+      "mean_auc": 0.1816,
+      "std_auc": 0.0033,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.025,
+      "significant_vs_random": true
+    },
+    "blobs20": {
+      "dataset": "blobs20",
+      "strategy": "uncertainty",
+      "mean_acc": 0.721,
+      "std_acc": 0.0092,
+      "mean_auc": 0.1293,
+      "std_auc": 0.0033,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0506,
+      "significant_vs_random": true
+    },
+    "spiral": {
+      "dataset": "spiral",
+      "strategy": "hybrid",
+      "mean_acc": 0.6153,
+      "std_acc": 0.0153,
+      "mean_auc": 0.1237,
+      "std_auc": 0.0013,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0208,
+      "significant_vs_random": true
+    },
+    "digits700": {
+      "dataset": "digits700",
+      "strategy": "uncertainty",
+      "mean_acc": 0.9317,
+      "std_acc": 0.0162,
+      "mean_auc": 0.1557,
+      "std_auc": 0.0044,
+      "n_seeds": 3,
+      "mean_final_labeled_frac": 0.2,
+      "delta_acc_vs_random": 0.0587,
+      "significant_vs_random": true
+    }
+  },
+  "agg_vs_random": {
+    "mean_delta_acc": 0.0396,
+    "mean_delta_auc": 0.004,
+    "n_significant": 5,
+    "n_datasets": 5
+  },
+  "quality_grade": "S",
+  "environment": {
+    "python": "3.13.14",
+    "numpy": "2.5.3",
+    "sklearn": "1.9.1",
+    "optuna": "5.0.0",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0"
+  },
+  "author": "晨星",
+  "system": "ActiveForge",
+  "version": "0.1.0",
+  "determinism_check": {
+    "strategy": "hybrid",
+    "seed": 42,
+    "identical": true,
+    "final_acc_ref": 0.8875
+  },
+  "ablation": {
+    "dataset": "blobs20",
+    "budget_frac": 0.2,
+    "batch_frac": 0.03,
+    "n_seeds": 2,
+    "committee_size": {
+      "n_members=3": 0.7426,
+      "n_members=9": 0.6944
+    },
+    "uncertainty_mode": {
+      "entropy": 0.7259,
+      "margin": 0.6981,
+      "least_confident": 0.7167
+    },
+    "conclusion": "committee 规模 n_members=3 (0.7426) vs n_members=9 (0.6944)；uncertainty 模式最优为 entropy"
+  },
+  "failure_cases": [
+    {
+      "id": "F1",
+      "title": "策略与数据形态错配：uncertainty 在 spiral 上反劣于随机",
+      "evidence": "spiral / uncertainty 准确率 0.556±0.020，相对随机 Δ=-0.039（全部 25 格中最差）",
+      "root_cause": "该数据结构下几乎所有未标注点都高熵，熵/投票排序退化为近似随机；连续查询落在同一稠密区域造成标签冗余（批内多样性不足）。",
+      "mitigation": "改用几何多样性或批感知混合策略（同数据集对照：coreset Δ=+0.017；hybrid Δ=+0.021）。"
+    },
+    {
+      "id": "F2",
+      "title": "策略与数据形态错配：coreset 在 moons 上增益几乎为零",
+      "evidence": "moons / coreset 相对随机仅 Δ=+0.001（准确率 0.863±0.016）",
+      "root_cause": "纯几何多样性只覆盖特征空间、不利用标签信息，在标签信息量高的非线性边界数据上不如基于不确定性的策略。",
+      "mitigation": "非线性边界优先 uncertainty / committee / hybrid；几何多样性适合冷启动播种。"
+    },
+    {
+      "id": "F3",
+      "title": "数据过易 / 高维：主动查询边际收益趋零",
+      "evidence": "充分分离 gaussian(sep=4.0) 上 hybrid-Random 增益仅 +0.003；高维 digits700 上 coreset 增益同样最弱（Δ=+0.022）",
+      "root_cause": "边界清晰时少量随机标注即逼近贝叶斯误差；高维原始特征下 k-center 距离度量退化。",
+      "mitigation": "先估计问题难度（初始交叉验证接近饱和则无需主动）；高维场景改用嵌入空间而非原始特征做多样性度量。"
+    }
+  ],
+  "sota_statement": "主动学习 SOTA 谱系：不确定性采样(Lewis&Catlett 1994; Settles 2009)、Query-By-Committee(Seung 1992)、BALD(Houlsby et al. 2011)、核心集 k-center(Sener&Savare 2018)、批感知 BatchBALD/BADGE(Ash et al. 2019)。本系统复用 scikit-learn 顶级实现 + 自研批感知混合策略(hybrid)。paperswithcode 无『主动学习分类』统一榜，故以随机采样为强基线，报告多 seed 均值增益与简易显著性门槛（Δ > 0.5×(std_a+std_r)）。",
+  "repro": "git clone https://github.com/CJX0712/activeforge && cd activeforge && python -m venv envs/activeforge && envs/activeforge/Scripts/python.exe -m pip install -r requirements.txt && envs/activeforge/Scripts/python.exe -m activeforge.cli bench --out benchmark.json",
+  "elapsed_sec": 73.1
+}

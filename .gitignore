@@ -1,0 +1,41 @@
+# 虚拟环境
+venv/
+envs/
+.venv/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 数据与模型产物（benchmark.json 是交付证据，需提交）
+data_cache/
+*.npy
+*.npz
+*.pkl
+*.joblib
+models/
+outputs/
+artifacts/
+
+# 密钥与本地配置
+.env
+*.key
+*.pem
+secrets/
+token*
+*secret*
+*password*
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 覆盖率
+.coverage
+htmlcov/

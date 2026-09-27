@@ -1,0 +1,10 @@
+# ActiveForge 运行时关键依赖（pinned 到实测版本）
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+optuna==5.0.0
+# 可选强后端（缺失时自动降级为纯 scikit-learn）
+xgboost==3.4.1
+lightgbm==4.7.0
+# 测试
+pytest==9.1.1
